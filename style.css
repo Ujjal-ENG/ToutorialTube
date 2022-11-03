@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  padding-top: 80px;
+}
+
+.thumbnail {
+  width: 300px;
+  display: block;
+  border-radius: 15px;
+}
+
+.videoPreview {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+.video-title {
+  font-weight: bold;
+  margin-left: 15px;
+}
+.video-info {
+  line-height: 15px;
+}
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: gray;
+  line-height: 10px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.channel-picture {
+  display: inline-block;
+  width: 50px;
+  margin-top: 5px;
+  vertical-align: top;
+  padding: 2px;
+}
+.video-info {
+  display: inline-block;
+  width: 200px;
+}
+.channel-picture img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding-left: 140px;
+  background-color: rgb(247, 247, 247);
+}
+
+/* Header Section */
+.header {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 5px;
+  background-color: white;
+  z-index: 1;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+}
+
+/* Left Section Design of header */
+.left-section-header {
+  display: flex;
+  align-items: center;
+}
+.bar-style {
+  padding: 0px 10px;
+  font-size: 50px;
+  color: gray;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.youtube-style {
+  padding: 0px 10px;
+  font-size: 50px;
+  color: red;
+}
+#style {
+  color: black;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Middle section desing of header */
+.middle-section-header {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  font-size: 20px;
+  margin-left: 12px;
+  display: inline-block;
+  flex: 1;
+  height: 28px;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+  width: 0;
+}
+.search-bar::placeholder {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+.search-btn {
+  font-size: 28px;
+}
+
+#searchbtn {
+  position: relative;
+  background-color: white;
+  border: none;
+  border: 1px solid gainsboro;
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: rgb(246, 246, 246);
+}
+
+.tool-search {
+  position: absolute;
+  background-color: gray;
+  top: 54px;
+  left: 25px;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#searchbtn:hover .tool-search {
+  opacity: 1;
+}
+
+#voicebtn {
+  position: relative;
+  background-color: white;
+  border: none;
+  border: 1px solid gainsboro;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: rgb(246, 246, 246);
+}
+.voice-search-btn {
+  font-size: 20px;
+}
+.tool-Voice-search {
+  position: absolute;
+  background-color: gray;
+  top: 54px;
+  left: -60px;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  width: 160px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#voicebtn:hover .tool-Voice-search {
+  opacity: 1;
+}
+
+/* Right section design of header */
+.right-section-header {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.right-section-header:active {
+  font-size: small;
+}
+#img-pro {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+/* Timer design */
+.div {
+  position: relative;
+}
+.timer > p {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 3px;
+  font-weight: bold;
+}
+.timer {
+  position: absolute;
+  top: 124px;
+  right: 8px;
+}
+
+/* Sidebar style */
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 65px;
+  width: 85px;
+  padding: 10px;
+}
+.sidebar-link {
+  background-color: rgb(226, 214, 214);
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 200;
+  cursor: pointer;
+}
+.icon-style {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+.sidebar-link div {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sidebar-link:hover {
+  background-color: lightgray;
+}
+/* Notification Bar Deisgn */
+.notification {
+  position: relative;
+}
+.notification-count {
+  position: absolute;
+  top: -12px;
+  left: 9px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 20px;
+  background-color: red;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
+.video-create {
+  position: relative;
+}
+
+.create {
+  position: absolute;
+  font-family: "Times New Roman", Times, serif;
+  top: 26px;
+  right: -26px;
+  width: 58px;
+  font-weight: bold;
+  color: white;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 50px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.video-create:hover .create {
+  opacity: 1;
+}
+
+.notifi {
+  position: absolute;
+  font-family: "Times New Roman", Times, serif;
+  top: 25px;
+  right: 0;
+  left: -48px;
+  width: 110px;
+  font-weight: bold;
+  color: white;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 50px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.notification:hover .notifi {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
